@@ -80,7 +80,7 @@ import javax.sql.DataSource;
  *                                              (JPA 에서는 사용 불가능, 실제로 잘 사용하지는 않음)
  *
  *     ** @Transactional 옵션인 isolation, timeout, readOnly 는 Tx 이 처음 시작될 때(새로운 Tx 생성)만 적용. 참여하는 경우는 적용 불가능
- *     (그럼 아마 이 옵션을 다르게 해줘야 하는 경우에 새로운 tx 사용하는 전파 옵션을 사용하지 않을까 하는 개인적인 생각)
+ *
  * </전파옵션>
  */
 @Slf4j
