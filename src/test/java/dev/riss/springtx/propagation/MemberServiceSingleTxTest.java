@@ -19,6 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Client Z 는 OrderService 에서 Tx 를 시작하고 클라이언트 A의 MemberService 로직을 호출하고 싶음
  *
  * A 입장에서는 MemberRepository, LogRepository 메서드에 @Transactional 을 모두 빼고 서비스 로직에만 해당 애노테이션 추가하면 됨
+ * (트랜잭션 전파 개념 없다는 가정하에)
  * B, C 입장에서는 각각 Repository 에 @Transactional 을 넣어야 하는 상황
  * ... 그럼 메서드를 각각 만들어야 하나..? 의 문제 발생
  * Z 입장에서도 복잡한 계층에서 트랜잭션 시작 관련 문제 발생
